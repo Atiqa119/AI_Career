@@ -2,6 +2,6 @@ streamlit
 scikit-learn
 pandas
 numpy
-pickle
 matplotlib
 seaborn
+openpyxl>=3.0.0
