@@ -1684,7 +1684,7 @@ def ask_questions(features):
                 display_values[feature] = val
             elif feature == "Certifications_Count":
                 val = st.number_input(
-                    f"How many professional {feature.replace('_', ' ').lower()} do you have?",
+                    f"How many {feature.replace('_', ' ').lower()} do you have?",
                     min_value=0, max_value=100, value=2, step=1,
                     key=f"num_{feature}"
                 )
@@ -1708,7 +1708,7 @@ def ask_questions(features):
                 display_values[feature] = val
             elif feature == "Courses_Completed":
                 val = st.number_input(
-                    "How many courses have you completed?",
+                    "How many Professional courses have you completed?",
                     min_value=0, max_value=10, value=5, step=1,
                     key=f"num_{feature}"
                 )
