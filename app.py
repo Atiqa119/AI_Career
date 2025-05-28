@@ -1858,25 +1858,28 @@ def show_welcome_screen():
                     padding: 20px;
                 }}
                 /* Button styling - more specific selector */
-                div.stButton > button:first-child {{
-                    background-color: #6a3093 !important;
-                    color: white !important;
-                    border: 2px solid white !important;
-                    border-radius: 30px !important;
-                    padding: 15px 30px !important;
-                    font-size: 20px !important;
-                    font-weight: bold !important;
-                    box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
-                    transition: all 0.3s !important;
-                    width: 250px !important;
-                }}
-                div.stButton > button:first-child:hover {{
-                    background-color: #5a2a83 !important;
-                    color: white !important;
-                    border: 2px solid white !important;
-                    transform: translateY(-3px) !important;
-                    box-shadow: 0 6px 20px rgba(0,0,0,0.25) !important;
-                }}
+                  div.stButton > button:first-child {{
+            background-color: rgba(106, 48, 147, 0.9) !important;  /* Semi-transparent purple */
+            color: white !important;
+            border: 2px solid white !important;
+            border-radius: 30px !important;
+            padding: 15px 30px !important;
+            font-size: 20px !important;
+            font-weight: bold !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+            transition: all 0.3s !important;
+            width: 250px !important;
+            margin: 0 auto !important;  /* Center the button */
+            display: block !important;
+        }}
+        div.stButton > button:first-child:hover {{
+            background-color: rgba(85, 37, 118, 0.9) !important;
+            transform: translateY(-3px) !important;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
+            color: white !important;
+            border: 2px solid white !important;
+        }}
             </style>
             """,
             unsafe_allow_html=True
