@@ -1868,7 +1868,7 @@ def show_welcome_screen():
                     font-size: 20px;
                     border-radius: 30px;
                     background-color: white;
-                    color: #800080;
+                    color: white !important;
                     border: 2px solid #800080;
                     cursor: pointer;
                     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
