@@ -1828,7 +1828,7 @@ def show_welcome_screen():
                 .stApp {{
                     background-image: url("data:image/jpeg;base64,{image_base64}");
                     background-size: cover;
-                    background-position: center;
+                    background-position: top;
                     background-repeat: no-repeat;
                     background-attachment: fixed;
                     height: 100vh;
