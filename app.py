@@ -1858,7 +1858,7 @@ def show_welcome_screen():
                     padding: 20px;
                 }}
                 /* Button styling - more specific selector */
-                  div.stButton > button:first-child {{
+                  .stButton > button:first-child {{
             background-color: rgba(106, 48, 147, 0.9) !important;  /* Semi-transparent purple */
             color: white !important;
             border: 2px solid white !important;
@@ -1873,7 +1873,7 @@ def show_welcome_screen():
             margin: 0 auto !important;  /* Center the button */
             display: block !important;
         }}
-        div.stButton > button:first-child:hover {{
+        .stButton > button:first-child:hover {{
             background-color: rgba(85, 37, 118, 0.9) !important;
             transform: translateY(-3px) !important;
             box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
