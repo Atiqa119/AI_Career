@@ -1821,76 +1821,65 @@ def show_welcome_screen():
             unsafe_allow_html=True
         )
     else:
-        # Set background image and disable scrolling
+        # Set background image and disable scrolling - UPDATED CSS
         st.markdown(
             f"""
             <style>
                 .stApp {{
                     background-image: url("data:image/jpeg;base64,{image_base64}");
                     background-size: cover;
-                    background-position: centre;
+                    background-position: center;
                     background-repeat: no-repeat;
                     background-attachment: fixed;
                     min-height: 100vh;
-                    overflow: hidden;
                     margin: 0;
                     padding: 0;
-                }}
-                html, body {{
-                    height: 100%;
-                    margin: 0;
-                    padding: 0;
-                    overflow: hidden;
                 }}
                 .main .block-container {{
                     padding: 0;
-                    height: 100vh;
+                    min-height: 100vh;
                     position: relative;
                     max-width: 100%;
                 }}
-                .button-container {{
-                    position: fixed;
-                    bottom: 20px;
+                /* New container for centering content */
+                .welcome-content {{
+                    position: absolute;
+                    top: 0;
                     left: 0;
                     right: 0;
+                    bottom: 0;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
-                    z-index: 999;
-                    width: 100%;
+                    align-items: center;
+                    text-align: center;
+                    color: white;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+                    padding: 20px;
                 }}
-                .stButton {{
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
-                }}
-                /* Updated button styling */
-                .stButton>button {{
-                    padding: 15px 30px;
-                    font-size: 20px;
-                    border-radius: 30px;
-                    background-color: transparent !important;
+                /* Button styling - more specific selector */
+                div.stButton > button:first-child {{
+                    background-color: #6a3093 !important;
                     color: white !important;
                     border: 2px solid white !important;
-                    cursor: pointer;
-                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-                    transition: all 0.3s;
-                    width: 250px;
-                    font-weight: bold;
+                    border-radius: 30px !important;
+                    padding: 15px 30px !important;
+                    font-size: 20px !important;
+                    font-weight: bold !important;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
+                    transition: all 0.3s !important;
+                    width: 250px !important;
                 }}
-                .stButton>button:hover {{
-                    transform: translateY(-3px);
-                    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-                    background-color: rgba(255,255,255,0.1) !important;
-                }}
-                /* Override Streamlit's default button focus style */
-                .stButton>button:focus:not(:active) {{
-                    border-color: white !important;
-                    color: white !important;
+                div.stButton > button:first-child:hover {{
+                    background-color: #5a2a83 !important;
+                    transform: translateY(-3px) !important;
+                    box-shadow: 0 6px 20px rgba(0,0,0,0.25) !important;
                 }}
             </style>
             """,
             unsafe_allow_html=True
         )
+    
     
     # Add content to main container
     with main_container:
