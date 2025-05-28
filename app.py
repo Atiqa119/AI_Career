@@ -1863,13 +1863,14 @@ def show_welcome_screen():
                     justify-content: center;
                     width: 100%;
                 }}
+                /* Updated button styling */
                 .stButton>button {{
                     padding: 15px 30px;
                     font-size: 20px;
                     border-radius: 30px;
-                    background-color: white;
+                    background-color: transparent !important;
                     color: white !important;
-                    border: 2px solid #800080;
+                    border: 2px solid white !important;
                     cursor: pointer;
                     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
                     transition: all 0.3s;
@@ -1879,7 +1880,12 @@ def show_welcome_screen():
                 .stButton>button:hover {{
                     transform: translateY(-3px);
                     box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-                    background-color: #f0e6ff;
+                    background-color: rgba(255,255,255,0.1) !important;
+                }}
+                /* Override Streamlit's default button focus style */
+                .stButton>button:focus:not(:active) {{
+                    border-color: white !important;
+                    color: white !important;
                 }}
             </style>
             """,
