@@ -1872,6 +1872,8 @@ def show_welcome_screen():
                 }}
                 div.stButton > button:first-child:hover {{
                     background-color: #5a2a83 !important;
+                    color: white !important;
+                    border: 2px solid white !important;
                     transform: translateY(-3px) !important;
                     box-shadow: 0 6px 20px rgba(0,0,0,0.25) !important;
                 }}
