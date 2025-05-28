@@ -1858,7 +1858,7 @@ def show_welcome_screen():
                     padding: 20px;
                 }}
                 /* Button styling - more specific selector */
-                  .stButton > button:first-child {{
+                  div.stButton > button:first-child {{
             background-color: rgba(106, 48, 147, 0.9) !important;  /* Semi-transparent purple */
             color: white !important;
             border: 2px solid white !important;
