@@ -1892,6 +1892,7 @@ def show_welcome_screen():
             """
             <div style='text-align: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);'>
                 <h1>   </h1>
+                <h1>    </h1>
                 <h2>    </h2>
                 <h2>    </h2>
                 <h2>   </h2>
