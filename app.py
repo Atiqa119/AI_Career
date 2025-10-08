@@ -309,7 +309,7 @@ FIELD_OF_STUDY_OPTIONS = [
 DEGREE_OPTIONS = ["Diploma", "Bachelors", "Masters", "PhD"]
 
 # Work schedule options
-WORK_SCHEDULE_OPTIONS = ["9-5", "Freelance", "Shifts"]
+WORK_SCHEDULE_OPTIONS = ["Freelance", "Shifts"]
 
 # Location options
 LOCATION_OPTIONS = ["Urban", "Rural", "Flexible"]
